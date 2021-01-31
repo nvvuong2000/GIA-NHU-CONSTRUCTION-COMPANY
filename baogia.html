@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <!------ Include the above in your HEAD tag ---------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1711280b04.js" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/bootstrap/js/script.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0"
+        nonce="hOSFH8Hk"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Style Carousel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- <link href="css/style-button.css" rel="stylesheet" /> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="logo">
+                        <a href="./" title="Xây Dựng Gia Như"><img class="img-fluid"
+                                src="https://xaydunggialong.vn/upload/hinhanh/214x130x1/logo-(1)-5215-02710.jpg"
+                                alt="Xây Dựng Gia Long"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="banner">
+                        <a href="/" title="CÔNG TY  TNHH TM THIẾT KẾ ĐẦU TƯ XÂY DỰNG GIA LONG">
+                            <img class="img-fluid"
+                                src="https://xaydunggialong.vn/upload/hinhanh/710x130x1/trong-ty-gl-9524.jpg"
+                                alt="CÔNG TY  TNHH TM THIẾT KẾ ĐẦU TƯ XÂY DỰNG GIA LONG">
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="col-md-3 col-sm-3 d-none">
+                    <div class="qct">
+                        <div class="so_hotline">
+                            <p>Hotline tư vấn</p>
+                            <span>0909244698</span>
+                        </div>
+                        <div id="search">
+                            <input type="text" name="keyword" id="keyword" onkeypress="doEnter(event,'keyword');"
+                                value="Tìm kiếm..." onclick="if(this.value=='Tìm kiếm...'){this.value=''}"
+                                onblur="if(this.value==''){this.value='Tìm kiếm...'}">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!---END #search-->
+                    </div>
+                </div>
+            </div>
+        </header>
+          <nav class="navbar navbar-expand-lg navbar-light fixed">
+              <a href="#" class="navbar-brand">GIA<b>NHƯ</b></a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Collection of nav links, forms, and other content for toggling -->
+              <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start text-center">
+                  <div class="navbar-nav">
+                      <a href="./trangchu.html" class="nav-item nav-link ">Trang chủ</a>
+                      <a href="./gioithieu.html" class="nav-item nav-link">Giới thiệu</a>
+                      <a href="./baogia.html" class="nav-item nav-link active">Báo giá</a>
+
+                      <!-- <div class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Web Design</a>
+                            <a href="#" class="dropdown-item">Web Development</a>
+                            <a href="#" class="dropdown-item">Graphic Design</a>
+                            <a href="#" class="dropdown-item">Digital Marketing</a>
+                        </div>
+                    </div> -->
+                      <a href="./thietke.html" class="nav-item nav-link">Thiết kế</a>
+                      <a href="./cokhi.html" class="nav-item nav-link">Cơ khí</a>
+                      <a href="./codien.html" class="nav-item nav-link">Cơ điện</a>
+                      <a href="./xaydung.html" class="nav-item nav-link">Xây dựng</a>
+
+                  </div>
+                  <form class="navbar-form form-inline ml-auto">
+                      <div class="input-group search-box">
+                          <input type="text" class="form-control">
+                          <div class="input-group-append">
+                              <button type="button" class="btn btn-danger"><span>Search</span></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </nav>
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://artco.com.vn/products/banner/banner.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/proxy/XmU8lpBj_x4bBDtavbF800PBCCY9UyDKZNPbVGifQVVLx8St6Lho6kNIcZwRTN_uchly0xM0BsVWrYkGYmt3KsI_7PKoiB2VhSFbGRfEMvFAGA"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://thcons.vn/upload/hinhanh/banner-ta%CC%82n-hu%CC%9Bng-cons-0087.png"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div> -->
+        <header>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/24/10/30/business-2884023_960_720.jpg"
+                        alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>Gia Như là một trong những chuyên gia hàng đầu trong lĩnh vực thiết kế và thi công
+                                    nội thất văn phòng, nhà hàng, bar, cafe, spa, nhà ở, căn hộ….v…..v.</h2>
+                                <h1>Start-ups and solutions</h1>
+                                <h4>Hãy liên hệ Gia Như, để chúng tôi có cơ hội phục vụ, tư vấn miễn phí và góp
+                                    sức thiết kế, xây dựng công trình tuyệt vời của bạn ngay từ bây giờ !
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg"
+                        alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>Gia Như là một trong những chuyên gia hàng đầu trong lĩnh vực thiết kế và thi công
+                                    nội thất văn phòng, nhà hàng, bar, cafe, spa, nhà ở, căn hộ….v…..v.</h2>
+                                <h1>Start-ups and solutions</h1>
+                                <h4>Hãy liên hệ Gia Như, để chúng tôi có cơ hội phục vụ, tư vấn miễn phí và góp
+                                    sức thiết kế, xây dựng công trình tuyệt vời của bạn ngay từ bây giờ !
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/04/16/37/meeting-2284501_960_720.jpg"
+                        alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>Gia Như là một trong những chuyên gia hàng đầu trong lĩnh vực thiết kế và thi công
+                                    nội thất văn phòng, nhà hàng, bar, cafe, spa, nhà ở, căn hộ….v…..v.</h2>
+                                <h1>Start-ups and solutions</h1>
+                                <h4>Hãy liên hệ Gia Như, để chúng tôi có cơ hội phục vụ, tư vấn miễn phí và góp
+                                    sức thiết kế, xây dựng công trình tuyệt vời của bạn ngay từ bây giờ !
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="wrapper">
+            <div class="container-fostrap">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-xs-12 ">
+                        <div>
+                            <!-- <img src="https://4.bp.blogspot.com/-7OHSFmygfYQ/VtLSb1xe8kI/AAAAAAAABjI/FxaRp5xW2JQ/s320/logo.png"
+                                        class="fostrap-logo" /> -->
+                            <h2 class="heading">
+                                Bảng báo giá
+                            </h2>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="card">
+                                        <a class="img-card"
+                                            href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                            <img
+                                                src="https://xuong43.com/wp-content/uploads/2020/06/xay-nha-tron-goi-gia-re.jpg" />
+                                        </a>
+                                        <div class="card-content">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                                    BẢNG BÁO GIÁ XÂY NHÀ TRỌN GÓI
+                                                </a>
+                                            </h4>
+                                            <p class="">
+                                                Bảng báo giá xây nhà trọn gói mới nhất đươc công ty chúng tôi cập nhật
+                                                cung cấp đến quý vị về giá xây dựng nhà trọn gói theo từng năm
+                                                xây dựng nhà...
+                                            </p>
+                                        </div>
+                                        <div class="card-read-more">
+                                            <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"
+                                                class="btn btn-link btn-block">
+                                                Đọc tiếp
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="card">
+                                        <a class="img-card"
+                                            href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                                            <img
+                                                src="https://nhalouis.com/wp-content/uploads/2017/07/kinh-nghiem-hoan-thien-nha-xay-tho-ma-cac-gia-chu-nen-biet-01.jpg" />
+                                        </a>
+                                        <div class="card-content">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://nhalouis.com/wp-content/uploads/2017/07/kinh-nghiem-hoan-thien-nha-xay-tho-ma-cac-gia-chu-nen-biet-01.jpg">
+                                                    BẢNG BÁO GIÁ XÂY NHÀ PHẦN THÔ
+                                                </a>
+                                            </h4>
+                                            <p class="">
+                                                Xây dưng Gia Long cung cấp đến quý khách bảng báo giá xây nhà phần thô,
+                                                để tìm hiểu giá xây nhà với phương châm sẵn sàng phục vụ. Chúng tôi gửi
+                                                đến quý khách bảng báo giá xây nhà phần thô chi tiết...
+                                            </p>
+                                        </div>
+                                        <div class="card-read-more">
+                                            <a href="https://codepen.io/wisnust10/full/ZWERZK/"
+                                                class="btn btn-link btn-block">
+                                                Đọc tiếp
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="card">
+                                        <a class="img-card"
+                                            href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                                            <img
+                                                src="https://www.caodangvietmy.edu.vn/wp-content/uploads/2017/07/thiet-ke-noi-that-la-gi.jpg" />
+                                        </a>
+                                        <div class="card-content">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                                                    BẢNG BÁO GIÁ THIẾT KẾ NHÀ
+                                                </a>
+                                            </h4>
+                                            <p class="">
+                                                Dịch vụ thiết kế nhà đẹp cung cấp đến quý khách dịch vụ thiết kế nhà
+                                                chuyên nghiệp. Thiết kế đẹp rẻ theo mọi phong cách uy tin nhanh chóng
+                                                chất lượng. Mới quý khách tham khảo bảng báo giá thiết
+                                            </p>
+                                        </div>
+                                        <div class="card-read-more">
+                                            <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
+                                                class="btn btn-link btn-block">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <h2>Các câu hỏi thường gặp</h2>
+                        <div class="faq-container">
+                            <div class="faq active">
+                                <h3 class="faq-title">Số điện thoại của công ty?</h3>
+                                <p class="faq-text"> 0949046768</p>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="faq">
+                                <h3 class="faq-title">
+                                    Địa chỉ của công ty?
+                                </h3>
+                                <p class="faq-text">Thửa đất số 3102, Tờ bản đồ số 8, Khu phố Đông Chiêu, Phường Tân
+                                    Đông Hiệp, Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam.</p>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="faq">
+                                <h3 class="faq-title">
+                                    Giờ mở cửa?
+                                </h3>
+                                <p class="faq-text">8:00 AM - 16:0 PM </p>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="faq">
+                                <h3 class="faq-title">
+                                    Công ty có những dịch vụ nào?
+                                </h3>
+                                <p class="faq-text">Tư vấn thiết kế, cơ khí, cơ điện, xây dựng </p>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <!-- <div class="faq">
+                                <h3 class="faq-title">What is: 1 + 1?</h3>
+                                <p class="faq-text">Depends on who are you asking.</p>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div> -->
+                        </div>
+                        <!-- <div class="news_list_con" style="width: 361px;float: left;">
+                            <h3><span>Tin tức mới nhất</span></h3>
+                            <ul>
+                                <li><a href="#"> Tin mới nhất 1</a></li>
+                                <li><a href="#"> Tin mới nhất 2</a></li>
+                                <li><a href="#"> Tin mới nhất 3</a></li>
+                                <li><a href="#"> Tin mới nhất 4</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="fb-page" data-tabs="timeline,events,messages"
+                            data-href="https://www.facebook.com/YoloBookStore" data-width="361" data-hide-cover="false"
+                            style="padding-top:20px ;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Tabs -->
+        <section id="tabs">
+            <div class="container">
+                <h2> Tư vấn và thiết kế</h2>
+                <div class="row">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link col-xs-12 active btn-tabs" id="nav-home-tab" data-toggle="tab"
+                                href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" >Thiết kế nhà phố biệt thự</a>
+                            <a class="nav-item nav-link col-xs-12 btn-tabs" id="nav-profile-tab" data-toggle="tab"
+                                href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nội
+                                thất không gian đẹp</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim
+                        occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit
+                        dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse
+                        consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod
+                        tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non
+                        adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat
+                        ex. -->
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="https://neohouse.vn/wp-content/uploads/2020/04/thiet-ke-noi-that-nha-dep-3-tang-banner.jpg">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="data:image/jpeg;base64,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">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image"
+                                                src="https://noithattrevietnam.com/uploaded/2018/08/1-mau-nha-dep-noi-that-hien-dai-can-80m2%20%281%29.jpg">
+                                            <div class="content-details fadeIn-left">
+                                                <h3>Dự án nhà phố biệt thự</h3>
+                                                <p>Mô tả</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2> Các dự án đã làm</h2>
+        <div class="container">
+            <header class="customer-logos slider">
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                </div>
+                <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
+                </div>
+            </header>
+        </div>
+
+        <footer style="margin-top:20px ;">
+            <!-- <p>Copyright &copy; 2019 <img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="logo"> All Rights Reserved.
+            </p> -->
+            <section class="contact-area" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="contact-content1 text-center">
+                                <!-- <a href="#"><img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="logo"></a>
+                                 
+                                  <div class="hr"></div> -->
+                                <p style="color:white">CÔNG TY TNHH TƯ VẤN THIẾT KẾ DỊCH VỤ KỶ THUẬT XÂY DỰNG
+                                    GIA NHƯ </p>
+                                <div class="hr"></div>
+                                <h6>3102 Khu phố Đông Chiêu, Phường Tân Đông Hiệp </h6>
+                                <h6>
+                                    Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam</h6>
+                                <h6>0949046768<span>|</span>congtygianhu20@gmail.com</h6>
+                                <div class="contact-social">
+                                    <ul style="list-style-type: none;">
+                                        <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                                        <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                                        <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Button Telephone -->
+    <a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet" href="tel:0936307069">
+        <div id="calltrap-ico"></div>
+    </a>
+
+    <!-- End Button -->
+    <div id="ts-back-to-top-wrap">
+        <a href="#wrap" id="ts-back-to-top" class="smoothscroll-up hello"> <i class="fa fa-arrow-up"></i></a>
+    </div>
+    <!-- ./Footer -->
+    </div>
+    <style>
+        .face_right {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            z-index: 1000;
+            float: left;
+            transition: 0.5s;
+        }
+
+        .img_face {
+            float: left
+        }
+
+        .face_right .img_face {
+            float: left;
+        }
+
+        .rowf_right {
+            display: none;
+            float: left
+        }
+
+        .face_right.active {
+            right: 0;
+        }
+
+        .face_right.active .rowf_right {
+            display: block
+        }
+    </style>
+    </div>
+    </div>
+    <script>
+        
+    </script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="101066715347688"
+        logged_in_greeting="Bạn cần chúng tôi tư vấn dịch vụ nào?"
+        logged_out_greeting="Bạn cần chúng tôi tư vấn dịch vụ nào?">
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
