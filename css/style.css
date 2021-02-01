@@ -70,6 +70,7 @@
  }
 
  .navbar {
+    margin-top:20px;
    font-size: 14px;
    background: #fff;
    padding-left: 16px;
@@ -824,6 +825,7 @@
  header .item {
    height: 100vh;
    position: relative;
+   margin-bottom: 20px;
  }
 
  header .item img {
@@ -2747,15 +2749,15 @@
 
  .Phone.is-animating {
    animation: phone-outer 3000ms infinite;
-
-   &::before {
+ }
+   .Phone.is-animating::before {
      animation: phone-inner 3000ms infinite;
    }
 
-   &::after {
+   .Phone.is-animating::after {
      animation: phone-icon 3000ms infinite;
    }
- }
+ 
 
  @keyframes phone-outer {
    0% {
@@ -3036,7 +3038,7 @@
     }
 
     #service .single_service {
-      ;
+      
       padding: 32px;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       margin-bottom: 50px;
